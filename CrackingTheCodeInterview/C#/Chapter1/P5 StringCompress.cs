@@ -16,7 +16,7 @@ namespace Chapter1
                     current = word[i];
                 }
                 count++;
-                if (i < word.Length-1 && current != word[i+1] || i == word.Length -1)
+                if (i <= word.Length-1 && current != word[i+1])
                 {
                     compressed += string.Concat(current, count);
                 }
