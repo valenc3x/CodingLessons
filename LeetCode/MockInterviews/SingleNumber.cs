@@ -6,29 +6,56 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            int[] nums = new int[]{7, 6, 4, 4, 6, 7, 6, 7, 4, 2};
+            int[] nums = new int[]{
+                43,
+                43,
+                43,
+                16,
+                16,
+                16,
+                45,
+                45,
+                45,
+                89,
+                89,
+                89,
+                -2147483648,
+                -2147483648,
+                -2147483648,
+                2147483646,
+                2147483646,
+                2147483646,
+                -2147483646,
+                -2147483646,
+                -2147483646,
+                -2147483647,
+                -2147483647,
+                -2147483647,
+                2147483647,
+            };
             System.Console.WriteLine(FindSingle(nums));
+
         }
 
         static int FindSingle(int[] nums)
         {
-            int number = 0;
+            double number = 0;
             Hashtable dict = new Hashtable();
             for (int i = 0; i < nums.Length; i++)
             {
-                if (dict.ContainsKey(nums[i]))
-                {
-
-                    number -= (int)dict[nums[i]];
-                } else {
-                    System.Console.WriteLine("p"+nums[i]);
-                    dict.Add(nums[i], 0);
-                    number += (2*nums[i]);
-                }
-                System.Console.WriteLine("n"+number);
+                number = Math.Log(nums[i], 3);
+                number = (int)number ^ nums[i];
+                // if (dict.ContainsKey(nums[i]))
+                // {
+                //     number ^= nums[i];
+                //     System.Console.WriteLine(number);
+                // } else {
+                //     System.Console.WriteLine("d:"+nums[i]);
+                //     dict.Add(nums[i], 0);
+                // }
             }
-            System.Console.WriteLine("c:"+dict.Count);
-            return number/2;
+            return (int)Math.Log(number, 10);
+            // return (int)(number/2);
         }
     }
 }
