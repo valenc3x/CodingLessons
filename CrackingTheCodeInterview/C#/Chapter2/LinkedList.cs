@@ -58,7 +58,7 @@ namespace Chapter2
 
         public void RemoveDuplicates()
         {
-            Hashtable dict = new Hashtable();
+            Hashtable dict<int, int> = new Hashtable<int, int>();
             Node aux = this.head;
             Node prev = null;
             while (aux != null){
