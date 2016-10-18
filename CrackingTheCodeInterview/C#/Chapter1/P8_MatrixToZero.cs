@@ -43,7 +43,7 @@ namespace Chapter1
             {
                 for (int j = 0; j < matrix[0].Length; j++)
                 {
-                    System.Consol   1e.Write(matrix[i][j]);
+                    System.Console.Write(matrix[i][j]);
                 }
                 System.Console.WriteLine();
             }
