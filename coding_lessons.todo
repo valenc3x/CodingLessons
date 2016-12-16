@@ -1,7 +1,12 @@
 Learn:
     ☐ Learn all about trees @critical
         ☐ Special attention to BTrees and BSTrees
+        ☐ Code Tree (add, remove, search)
+        ☐ Code preorder, inorder, postorder
 Solve:
     ☐ Serialized tree problem
     ☐ Wiggle problem
     ☐ Edu's problems (conv in Slack)
+        ✔ TicTacToe @done (11/7/2016, 10:58:50 PM)
+        ☐ Solve a laberint
+        ✔ Reduce Strings @done (11/7/2016, 10:58:51 PM)

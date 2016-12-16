@@ -4,6 +4,7 @@ namespace MS
 {
     public class TicTactoe{
 
+        // Time: O(n)
         public static bool CheckBoard(int[][] b){
             for (int k=0; k<b[0].Length; k++)
             {
